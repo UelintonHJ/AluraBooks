@@ -1,0 +1,22 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+
+:root {
+    /* Colors */
+    --body__background-color: #C4C4C4;
+    --header__background-color: #FFFFFF;
+    --menu-list__background-color: #FFFFFF;
+    --title-menu-list__font-color: #EB9B00;
+    --item-menu-list__font-color: #002F52;
+    --bgroundColor_banner: #002F52;
+    --color_txt_banner: #FFFFFF;
+    --color_input_search: #FFFFFF;
+
+    /* font */
+    --font-family__page: 'Poppins';
+}
+
+.body_page {
+    background-color: var(--body__background-color);
+    font-family: var(--font-family__page);
+}
