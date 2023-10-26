@@ -1,0 +1,43 @@
+@import url(styles/header.css);
+@import url(styles/banner.css);
+@import url(styles/carousel.css);
+@import url(styles/topics.css);
+@import url(styles/contact.css);
+@import url(styles/footer.css);
+
+:root {
+    /* Colors */
+    --body__background-color: #EBECEE;
+    --header__background-color: #FFFFFF;
+    --menu-list__background-color: #FFFFFF;
+    --title-menu-list__font-color: #EB9B00;
+    --item-menu-list__font-color: #002F52;
+    --bgroundColor_banner: #002F52;
+    --color_txt_banner: #FFFFFF;
+    --color_input_search: #FFFFFF;
+    --carousel-title_font-color: #EB9B00;
+    --carousel-title_background-color: #FFFFFF;
+    --card_background-color: #FFFFFF;
+    --description-title_color: #EB9B00;
+    --description-title-book_color: #002F52;
+    --buttons-anchor_background-color: #EB9B00;
+    --buttons-anchor_color: #FFFFFF;
+    --topics-section__background-color: #002F52;
+    --topics-title_color: #FFFFFF;
+    --topics-link_background_color: #EB9B00;
+    --topics-link_color: #FFFFFF;
+    --contact_background-color: #FFFFFF;
+    --contact-title_color: #002F52;
+    --contact-email_border-color: #002F52;
+    --contact-email_color: #002F52;
+    --email-placeholder_color: #002F52;
+    --footer_background-color: #FFFFFF;
+
+    /* font */
+    --font-family__page: 'Poppins';
+}
+
+.body_page {
+    background-color: var(--body__background-color);
+    font-family: var(--font-family__page);
+}

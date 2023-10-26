@@ -1,0 +1,36 @@
+.banner__input_search {
+    text-align: center;
+    padding: 2.5em;
+    background-color: var(--bgroundColor_banner);
+    color: var(--color_txt_banner);
+}
+
+.title_banner {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.txt_banner {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+.input_search__banner {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid var(--color_input_search);
+    border-radius: 24px;
+    background-color: transparent;
+    color: var(--color_txt_banner);
+}
+
+.input_search__banner::placeholder {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-family__page);
+    background: url(/assets/Vector.png) no-repeat;
+    background-position: 5px;
+    color: var(--color_txt_banner);
+}
