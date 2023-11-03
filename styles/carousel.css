@@ -35,6 +35,10 @@
     margin-bottom: 0.5em;
 }
 
+.description {
+    margin-right: 10px;
+}
+
 .description__assessment {
     margin-bottom: 0.5em;
 }
@@ -71,4 +75,44 @@
     font-weight: 700;
     text-decoration: none;
 }
+
+/* Media Query */
+
+@media screen and (min-width: 1024px) {
+    .carousel__title {
+        font-size: 26px;
+        padding: 5% 0 2%;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 2em 0 3em 0;
+    }
+
+    .swiper-wrapper {
+        margin: 10% 0;  
+    }
+
+    .swiper-slide {
+        text-align: center;
+    }
+
+    .description h2 {
+       margin: 5% 0;
+    }
+
+    .description p {
+        line-height: 200%;
+    }
+
+    /* Manutenção: Consertar o button-swiper */
+    .swiper-button-prev, .swiper-button-next {
+        display: none;
+        top: 80%;
+    }
+}
+
 

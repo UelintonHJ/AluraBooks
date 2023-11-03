@@ -9,6 +9,7 @@
     /* Colors */
     --body__background-color: #EBECEE;
     --header__background-color: #FFFFFF;
+    --navbar-item__color: #000000;
     --menu-list__background-color: #FFFFFF;
     --title-menu-list__font-color: #EB9B00;
     --item-menu-list__font-color: #002F52;
@@ -32,6 +33,7 @@
     --contact-email_color: #002F52;
     --email-placeholder_color: #002F52;
     --footer_background-color: #FFFFFF;
+    --footer-title-list_font-color: #858585;
 
     /* font */
     --font-family__page: 'Poppins';

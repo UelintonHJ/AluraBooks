@@ -29,3 +29,22 @@
     background-color: var(--topics-link_background_color);
     color: var(--topics-link_color);
 }
+
+/* Media Query */
+
+@media screen and (min-width: 1024px) {
+    .topics__title {
+        font-size: 24px;
+        margin: 2% 0;
+    }
+
+    .topics__item {
+        padding: 1em;
+        margin: 2em 2em;
+    }
+
+    .topics__link {
+        font-size: 24px;
+        padding: 1.5em 2em;
+    }
+}

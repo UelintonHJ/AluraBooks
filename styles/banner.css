@@ -34,3 +34,24 @@
     background-position: 5px;
     color: var(--color_txt_banner);
 }
+
+/* Media Query */
+
+@media screen and (min-width: 1024px) {
+    .title_banner {
+        font-size: 36px;
+    }
+
+    .banner__input_search {
+        padding: 5rem;
+    }
+
+    .input_search__banner {
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    .input_search__banner::placeholder {
+        background-position: 4.5em;
+    }
+}
