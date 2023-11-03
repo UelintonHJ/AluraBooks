@@ -1,100 +1,111 @@
+.header__menu-list {
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/Menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
 .header {
+    background-color: var(--white);
     display: flex;
     justify-content: space-between;
-    background-color: var(--header__background-color);
-    padding: 1em 1em 1em 0;
+    align-items: center;
     position: relative;
 }
 
-.header__menu-icon_logo-icon {
+.container {
     display: flex;
     align-items: center;
-    gap: 1em;
 }
 
-.checkbox_menu-list {
-    display: none;
+.container__img {
+    padding: 1em;
 }
 
-.checkbox_menu-list:checked~.header__menu-list_viewOnclick {
-    display: block;
-} 
-
-.header__menu-list_viewOnclick {
+.menu-list {
     display: none;
     position: absolute;
     top: 100%;
     width: 60vw;
 }
 
-.menu-list_viewOnclick__list-title, .menu-list_viewOnclick__list-item {
-    padding: 1em;
-    background-color: var(--menu-list__background-color);
-    
+.container__button:checked~.menu-list {
+    display: block;
 }
 
-.menu-list_viewOnclick__list-title {
-    color: var(--title-menu-list__font-color);
+.menu-list__title,
+.menu-list__item {
+    padding: 1em;
+    background-color: var(--white);
+}
+
+.menu-list__title {
+    color: var(--orange);
     font-weight: 700;
 }
 
-.menu-list_viewOnclick__ancor-item {
-    text-decoration: none;
+.menu-list__link {
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     text-transform: uppercase;
 }
 
-.menu-list_viewOnclick__list-item {
-    color: var(--item-menu-list__font-color);
-}
-
-.header__displayNameCompany {
+.container__button {
     display: none;
 }
 
-.header__navbar {
+.container__title {
     display: none;
 }
 
-.header__fav-icon_bag-icon_user-icon {
-    display: flex;
-    align-items: center;
-    gap: 1em;   
+.navbar {
+    display: none;
 }
-
-/* Media Query */
 
 @media screen and (min-width: 1024px) {
-    .header {
-        display: flex;
-        justify-content: space-around;
+
+    .container__title,
+    .container__title--bold {
+        font-family: var(--secundary-font);
+        font-size: 30px;
     }
 
-    .header__displayImgMenu {
-        display: none;
-    }
-
-    .header__displayNameCompany {
+    .container__title {
+        font-weight: 400;
         display: block;
     }
 
-    .header__navbar {
+    .container__title--bold {
+        font-weight: 700;
+    }
+
+    .navbar {
         display: flex;
-        align-items: center;
-        gap: 50px;
-        color: var(--navbar-item__color);
+    }
+
+    .navbar__item {
+        padding: 0 1em;
         text-transform: uppercase;
-        font-weight: 500;
     }
 
-    .header__fav-icon_bag-icon_user-icon{
-        gap: 40px;
+    .navbar__link {
+        text-decoration: none;
+        color: var(--black);
     }
 
-    .header__icon-fav {
+    .container__img-transparent {
         display: none;
     }
 
-    .navbar__button:checked ~ .header__menu-list_viewOnclick {
+    .header__menu-list {
+        display: none;
+    }
+
+    .navbar__button:checked~.menu-list {
         display: block;
         width: auto;
     }
@@ -102,5 +113,5 @@
     .navbar__button {
         display: none;
     }
-}
 
+}
