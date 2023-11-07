@@ -54,19 +54,7 @@
     text-transform: uppercase;
 }
 
-.container__button {
-    display: none;
-}
-
-.container__title {
-    display: none;
-}
-
-.navbar {
-    display: none;
-}
-
-.container__txt {
+.container__button, .container__title, .navbar, .container__txt {
     display: none;
 }
 
@@ -101,11 +89,7 @@
         color: var(--black);
     }
 
-    .container__img-transparent {
-        display: none;
-    }
-
-    .header__menu-list {
+    .container__img-transparent, .header__menu-list,  .navbar__button {
         display: none;
     }
 
@@ -113,11 +97,6 @@
         display: block;
         width: auto;
     }
-
-    .navbar__button {
-        display: none;
-    }
-
 }
 
 @media screen and (min-width: 1728px) {
