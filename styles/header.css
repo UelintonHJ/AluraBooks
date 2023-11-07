@@ -1,3 +1,11 @@
+.header {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
 .header__menu-list {
     width: 24px;
     height: 24px;
@@ -5,14 +13,6 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-}
-
-.header {
-    background-color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
 }
 
 .container {
@@ -33,6 +33,14 @@
 
 .container__button:checked~.menu-list {
     display: block;
+}
+
+.container__button:checked ~ .container__label {
+    background: var(--gradient-blue);
+}
+
+.container__button:checked ~ .container__label > .header__menu-list {
+    background-image: url(/assets/Menu\ Aberto.svg);
 }
 
 .menu-list__title,
@@ -78,6 +86,11 @@
     .navbar {
         display: flex;
     }
+    
+    .navbar__button:checked~.menu-list {
+        display: block;
+        width: auto;
+    }
 
     .navbar__item {
         padding: 0 1em;
@@ -93,10 +106,7 @@
         display: none;
     }
 
-    .navbar__button:checked~.menu-list {
-        display: block;
-        width: auto;
-    }
+    
 }
 
 @media screen and (min-width: 1728px) {
@@ -106,6 +116,24 @@
 
     .navbar {
         margin-right: auto;
+    }
+
+    .navbar__button:checked ~ .navbar__label > .navbar__item {
+        background: var(--gradient-blue);
+        color: var(--white);
+    }
+
+    .navbar__item {
+        padding: 2em 1em;
+    }
+
+    .menu-list__item:hover {
+        background: var(--gradient-blue);
+    }
+
+    .menu-list__item:hover > .menu-list__link{
+        -webkit-text-fill-color: var(--white);
+        text-decoration: none;
     }
 
     .container__link {
