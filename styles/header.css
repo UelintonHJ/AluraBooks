@@ -66,6 +66,10 @@
     display: none;
 }
 
+.container__txt {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
 
     .container__title,
@@ -114,4 +118,25 @@
         display: none;
     }
 
+}
+
+@media screen and (min-width: 1728px) {
+    .header {
+        padding: 0 2em;
+    }
+
+    .navbar {
+        margin-right: auto;
+    }
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+    }
+
+    .container__txt {
+        display: block;
+    }
 }
