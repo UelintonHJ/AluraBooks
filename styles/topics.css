@@ -43,4 +43,9 @@
     .topics {
         padding: 3em 30vw;
     }
+
+    .topics__link:hover {
+        color: var(--orange);
+        background-color: var(--white);
+    }
 }

@@ -101,7 +101,7 @@
 @media screen and (min-width: 1728px) {
     .carousel__container {
         display: flex;
-        margin: 3em 20vw 3em 20vw;
+        margin: 0 20vw 3em 20vw;
         align-items: center;
     }
 
@@ -128,6 +128,10 @@
 
     .description__txt {
         font-size: 16px;
+    }
+
+    .buttons__anchor:active {
+        background-color: var(--blue);
     }
 }
 

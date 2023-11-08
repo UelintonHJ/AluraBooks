@@ -52,4 +52,8 @@ hr {
         border-left: 1px solid var(--light-gray);
         padding-left: 1em;
     }
+
+    .list-footer__link:hover {
+        color: var(--orange)
+    }
 }
